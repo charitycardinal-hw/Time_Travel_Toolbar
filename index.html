@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    </head>
+    <body> 
+        <a id="toolbar_trigger" class="hide_wrench show_wrench" onclick="toggleToolBar()">
+            <i id="hover-effect" class="fa fa-wrench" title="Time Travel Toolbar"></i>
+        </a>
+        <div id="toolbar">
+            <div id="timetravel">
+                <form name="myform" id="calendarform" action="">
+                    Enter date: <input type="date" id="settingdate" name="date"/>  
+                    <input type='button' value='Set Cookie' onclick='setCookie("TimeTravelCookie", "date", 1)'/>
+                    <input type='button' value='Read Cookie' onclick='getCookie("TimeTravelCookie", "date", 1)'/>
+                    <input type='button' value='Delete Cookie' onclick='deleteCookie("TimeTravelCookie", "date", 1)'/>
+                </form>
+            </div>
+        </div>
+    </body>  
+    <script src="script.js"></script>
+</html>

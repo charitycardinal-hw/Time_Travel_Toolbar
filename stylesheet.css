@@ -1,0 +1,52 @@
+#toolbar div#load_timeline {
+    font-family: verdana;
+    font-size: 10px;
+    color: #fff;
+}
+#hover-effect {
+    display: none;
+    background: #fff;
+    border-radius: 1px;
+}
+a#toolbar_trigger {
+    position: absolute;
+    margin:3px;
+    cursor:pointer;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    display: block;
+}
+
+a#toolbar_trigger:hover #hover-effect {
+    cursor:pointer;
+    display: block;
+}
+#toolbar {
+    background-color: #000000;
+    border-bottom: 2px #999 solid;
+    font: 10px Verdana, Arial, Helvetica, sans-serif;
+    color: #fff;
+    width:100%;
+    font-size: 14px;
+    height: auto !important;
+    height: 200px;
+    min-height: 200px;
+    padding: 0px 0 5px 0;
+    position: relative;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 199;
+}
+#timetravel {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    align-items: flex-end;
+}
+
+
